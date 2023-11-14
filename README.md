@@ -14,5 +14,5 @@ Constructor robo-Senya
 
 Что ж, хочу пожелать нам удачи и терпения на этом непростом и интересном пути!
 
-За проектом можно следить на мрём канале, а так же за всеми изменениями проекта на гитхаб - https://github.com/SemiMaks/senya
+За проектом можно следить на моём канале, а так же за всеми изменениями проекта на гитхаб - https://github.com/SemiMaks/senya
 Канал youtube - https://www.youtube.com/playlist?list=PLHk5M7NPKJQGfxuGTP2CrEPZnRyiT2gdD
