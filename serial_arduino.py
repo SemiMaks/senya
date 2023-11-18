@@ -14,17 +14,35 @@ for port in ports:
     print(f"Описание: {port.description}")
     print(f"Производитель: {port.manufacturer}\n")
 
-while (1):
-    userInput = input('Направление: ')
-    if userInput == 'l':
-        ser.write(b'l')
-    if userInput == 'r':
-        ser.write(b'r')
-    if userInput == 'u':
-        ser.write(b'u')
-    if userInput == 'd':
-        ser.write(b'd')
-    if userInput == 'q':
-        ser.close()
-        print('Завершение работы программы...')
-        sys.exit()
+
+def manual():
+    print('Выбран ручной режим\nl - влево\nr - вправо\nu - вверх\nd - вниз\n')
+
+    while (True):
+        print('Для выхода из программы нажмите \n"q"')
+        userInput = input('Направление: ')
+        if userInput == 'l':
+            ser.write(b'l')
+        if userInput == 'r':
+            ser.write(b'r')
+        if userInput == 'u':
+            ser.write(b'u')
+        if userInput == 'd':
+            ser.write(b'd')
+        if userInput == 'q':
+            ser.close()
+            print('Завершение работы программы...')
+            sys.exit()
+
+
+def auto():
+    print('Работа в автоматическом режиме!')
+
+
+ans = input('Выберите режим работы программы \n(ручной - "m" или авто - "a"):\n')
+
+if ans == 'm':
+    manual()
+
+if ans == 'a':
+    auto()
